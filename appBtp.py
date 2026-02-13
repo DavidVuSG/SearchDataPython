@@ -142,7 +142,7 @@ status = st.selectbox(
 )
 
 search_text = st.text_input(
-    "🔍 Search (MAHANG, PO, LOC, LPN) – dùng dấu ,",
+    "🔍 Search (MAHANG, PO, LOC, LPN,SUPPLIER) – dùng dấu ,",
     placeholder="VD: RPL-9T, 1169, A1-02-03-1"
 )
 
@@ -153,7 +153,7 @@ search_text = st.text_input(
 # =========================
 if search_text:
     tokens = [t.strip() for t in search_text.split(",")]
-    cols = ["MAHANG", "PO", "LOC", "LPN"]
+    cols = ["MAHANG", "PO", "LOC", "LPN","SUPPLIER"]
 
     for col, token in zip(cols, tokens):
         if token:
@@ -176,7 +176,7 @@ df = df.sort_values("DATEREC")
 # RESULT (CHỈ SHOW CỘT CẦN)
 # =========================
 result = df[
-    ["LOC", "MAHANG", "SOLUONG", "SOTHUNG", "LPN", "PO", "SUPPLIER","DATEREC","PACK", "STATUS"]
+    ["LOC", "LPN", "MAHANG", "SOLUONG", "SOTHUNG", "PO", "SUPPLIER","DATEREC","PACK", "STATUS"]
 ]
 
 st.markdown(f"### 📄 Result: **{len(result)} rows**")
