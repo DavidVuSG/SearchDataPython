@@ -1,0 +1,82 @@
+﻿;DO NOT DELETE THIS LINE*** version=1 ***
+``:THÊM
+`G:=COUNTIF($F$2:$F$1000,$F2)>1
+=RIGHT($C2,1):SFLOOR
+ADDD.:=TEXTJOIN(", ",TRUE,A1:A20)
+ADDS.:=XLOOKUP(INDIRECT("A" & ROW()), NO_PO!A:A, NO_PO!K:K)
+ADDSL:THAY ĐỔI SỐ LƯỢNG CỦA MÃ -  ĐƠN  
+ANHMANH:D042AMA
+bs:XUẤT HÀNG BP KỸ THUẬT KIỂM TRA THÊM
+CHECKSY.:=COUNTIFS($J:$J,"=0",$H:$H,"<>0",$A:$A,"SM_*")
+CHECKTR.:=SUMIFS(Sheet3!E:E,Sheet3!G:G,C4,Sheet3!B:B,B4)
+CHUATEST:DẠ ANH, HÀNG CONT MỚI VỀ, BP KỸ THUẬT CHƯA BÁO KẾT QUẢ NHA ANH.
+EPS.:EXTRACT TEXT FROM IMAGE LOOK LIKE FORMATTING CSV
+EPS1.:Format the following data into a CSV structure: extract the date as the first field, and the subsequent text as the second field, ensuring the second field is truncated immediately before the first forward slash (/). Use a comma and space as the separator.
+hh:HÀNG HƯ 
+HOLD.:HÀNG NÀY ĐANG BỊ HOLD NHA ANH
+Input Data:hh
+K1:1001
+K3:1003
+K4:1005
+KLAB:1006
+KMEP:1008
+KTP:1009
+KX3:1003
+KX4:1005
+LLOT6:=TEXT(A2,"yyyymmdd")
+LOCHH.:A2-04-15-3
+NHAPLOT3:NHẬP LẠI CHO ĐÚNG PO (PX )
+nhaptp:NHẬP HÀNG TỪ KHO TP VỀ XUẤT ĐG
+NHDG:HÀNG ĐÓNG GÓI TRẢ LẠI NGÀY 
+nhx5:NHẬP HÀNG TỪ BP MÁY ÉP X5
+nkt:NHẬP HÀNG TỪ BP KỸ THUẬT (HÀNG KIỂM TRA MẪU)
+NN.:LẤY HẾT NGUYÊN LINE NÀY
+NTP:NHẬP HÀNG THÀNH PHẨM
+NX3:NHẬP HÀNG TỪ XƯỞNG 3 - ĐG
+NX4:NHẬP HÀNG TỪ XƯỞNG 4 - 1005
+NX5:NHẬP HÀNG TỪ XƯỞNG 5 - 1008
+OH:DẠ ANH
+OK4:ĐƠN ĐÓNG GÓI A
+OKK:ĐƠN ĐG MỚI A
+OUT.:MÃ HÀNG NÀY -> HẾT HÀNG RÙI NHA ANH
+P.:PL CHẴN
+P3.:LẤY NGUYÊN LINE HÀNG
+P4.:PL LẺ
+P5.:PL KHOANH
+PLTHIEU.:01PL250520106
+PLTP.:01PL2509101
+PP9: CD "C:\USERS\NHAN\DOCUMENTS\PYTHON NOTEBOOK\PROJECTSQLPYTHON"; PYTHON .\APP.PY
+PPO9:cd "C:\Users\nhan\Documents\Python Notebook\PYTHONSYNCTONMPE" ; Python .\checksyn.py
+PRINT.:ĐỂ ANH IN ĐƠN NHÉ!
+Q.:LẤY HẾT SỐ LƯỢNG NÀY
+Q1.:NHỜ CHÚ LẤY GIÚP Ạ
+QQ:LẤY HẾT
+r3:b36
+R4:THÊM
+R5:LẤY HẾT NGUYÊN LINE NÀY
+RR3:DẠ, EM CÓ NHẬN HÀNG NÀY NHE ANH.
+RUNNING.:=SUMIFS($D$4:D4, $C$4:C4, C4)
+sentbn336: EM GỬI ANH  BẢNG THEO DÕI XUẤT ĐỔI TRẢ HÀNG BN3-36T - NCC: KIMSANG ạ
+SENTBN60:EM GỬI BẢNG KÊ SỐ LƯỢNG SM_BN-60T_001 HẰNG NGÀY
+SFLOOR:=RIGHT($C2,1)
+SHIP:SHIPPED COMPLETED
+SHIPIK:ANH XEM VA SHIPPED COMPLETED GIUP EM
+SLLOT6:=IF(ISBLANK(P4), "", TEXT(P4, "YYYY-MM-DD"))
+sloc:=LEFT($C2,8)
+SR3:cd "C:\Users\nhan\Documents\Python Notebook\ProjectSQLPython"; python .\app.py
+SSITEM:=IFERROR(RIGHT(A2,LEN(A2)-FIND("_",A2)),"")
+SSPO:=LEFT(E2,FIND("/",E2)-1)
+SSXITEM:=IFERROR(MID(A2,FIND("_",A2)+1,FIND("_",A2,FIND("_",A2)+1)-FIND("_",A2)-1),"")
+syncton: EM GỬI ĐỐI CHIẾU TỒN KHO 2 PHẦN MỀM SAP-WMS tại 
+T.:T CHẴN
+T4.:T MẪU
+XDG:XUẤT ĐÓNG GÓI
+xhdn:XUẤT HÀNG THEO PHIẾU ĐỀ NGHỊ NGÀY 
+xhkt:XUẤT MẪU HÀNG CONT   CHO BP KỸ THUẬT KIỂM TRA​
+xkt:XUAT MAU HANG CONT  CHO BP KY THUAT
+XRA:XONG RỒI NE ANH
+XRE:XONG RỒI NE EM!
+XTH:XUẤT NVL TIÊU HAO THEO LSX 
+XTP:XUẤT HÀNG THÀNH PHẨM
+xx4:GIAO HANG XUONG 4 - 1005
+ZC:STAGE
